@@ -1,0 +1,10 @@
+<div class="user-sidebar" [ngClass]="{'visible': isVisible}">
+  <div class="user-info">
+      <h3>Información del usuario</h3>
+      <p><strong>Nombre de usuario:</strong> {{ username }}</p>
+      <p><strong>ID:</strong> {{ userId }}</p>
+      <p><strong>Nombre completo:</strong> {{ fullName }}</p>
+      <button class="btn__profile" (click)="closeSidebar()">Cerrar</button>
+      <button class="btn__session" (click)="closeSession()">Cerrar Sesión</button>
+  </div>
+</div>

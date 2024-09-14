@@ -1,0 +1,74 @@
+/* Estilos para la bienvenida */
+.welcome-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Estilos para el contenedor de acciones */
+.action-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.variable-title {
+    font-size: 1.5rem;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.action-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para cada botón */
+.get {
+    background-color: #28a745;
+    color: white;
+}
+
+.query {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.update {
+    background-color: #ffc107;
+    color: white;
+}
+
+.link {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Hover effects para los botones */
+.action-button:hover {
+    opacity: 0.85;
+}
+
+.action-button:active {
+    transform: scale(0.98);
+}

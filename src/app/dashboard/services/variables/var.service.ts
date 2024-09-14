@@ -6,15 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class VarService {
-  // constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-  // getData(variableId: string): Observable<any> {
-  //   return this.http.get(`/api/get/${variableId}`);
-  // }
+  getData(variableId: string): Observable<any> {
+    // return this.http.get(`/api/get/${variableId}`);
+    return this.http.get(`http://localhost:3000/`);
+  }
 
-  // queryData(variableId: string, queryParams: any): Observable<any> {
-  //   return this.http.post(`/api/query/${variableId}`, queryParams);
-  // }
+  queryData(variableId: string, queryParams: any): Observable<any> {
+    // return this.http.post(`/api/query/${variableId}`, queryParams);
+    return this.http.post(`http://localhost:3000/data`, queryParams);
+  }
 
   // updateData(variableId: string): Observable<any> {
   //   return this.http.put(`/api/update/${variableId}`, {});

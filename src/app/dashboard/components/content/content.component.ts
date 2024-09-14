@@ -16,10 +16,10 @@ export class ContentComponent {
 
   performAction(actionType: string) {
     if (actionType === 'get') {
-      // this.apiService.getData(this.selectedVariable).subscribe(data => {
-      //   console.log('Get data:', data);
-      // });
-      console.log('get')
+      this.apiService.getData(this.selectedVariable).subscribe(data => {
+        console.log('Get data:', data);
+      });
+      // console.log('get')
     } else if (actionType === 'query') {
       // Lógica adicional para query (mostrar un formulario si es necesario)
       console.log('query')
